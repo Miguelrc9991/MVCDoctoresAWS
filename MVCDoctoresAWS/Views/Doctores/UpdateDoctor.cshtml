@@ -1,0 +1,21 @@
+﻿@model Doctor
+
+<form method="post" enctype="multipart/form-data">
+    <input type="hidden" name="IdDoctor" value="@Model.IdDoctor" />
+    <label>Hospital : </label>
+    <input type="text" name="IdHospital" value="@Model.IdHospital" class="form-control" />
+    <br />
+    <label>Apellido : </label>
+    <input type="text" name="Apellido" value="@Model.Apellido" class="form-control" />
+    <br />
+    <label>Especialidad : </label>
+    <input type="text" name="Especialidad" value="@Model.Especialidad" class="form-control" />
+    <br />
+    <label>Salario : </label>
+    <input type="text" name="Salario" value="@Model.Salario" class="form-control" />
+    <br />
+    <label asp-for="Imagen" class="control-label"></label>
+    <input type="file" name="imagenBBDD" class="form-control" />
+    <br />
+    <button class="btn btn-warning" type="submit">Update</button>
+</form>
